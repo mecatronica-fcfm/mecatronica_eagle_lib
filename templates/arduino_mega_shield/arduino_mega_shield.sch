@@ -3607,13 +3607,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <label x="175.26" y="137.16" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="ASD" class="0">
-<segment>
-<wire x1="73.66" y1="134.62" x2="73.66" y2="137.16" width="0.1524" layer="91"/>
-<label x="74.422" y="137.16" size="1.778" layer="95" rot="R90"/>
-<pinref part="J1" gate="G$1" pin="7"/>
-</segment>
-</net>
 <net name="VIN" class="0">
 <segment>
 <wire x1="93.98" y1="53.34" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
@@ -4138,6 +4131,11 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="J7" gate="G$1" pin="1"/>
 <pinref part="J7" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<wire x1="73.66" y1="134.62" x2="73.66" y2="137.16" width="0.1524" layer="91"/>
+<label x="74.422" y="137.16" size="1.778" layer="95" rot="R90"/>
+<pinref part="J1" gate="G$1" pin="7"/>
 </segment>
 </net>
 </nets>
