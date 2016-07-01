@@ -32,7 +32,7 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
@@ -515,7 +515,7 @@
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="SparkFun">
+<designrules name="config_through_hole">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
@@ -526,18 +526,18 @@ design rules under a new name.</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
+<param name="mdWireWire" value="9mil"/>
+<param name="mdWirePad" value="9mil"/>
+<param name="mdWireVia" value="9mil"/>
+<param name="mdPadPad" value="9mil"/>
+<param name="mdPadVia" value="9mil"/>
+<param name="mdViaVia" value="9mil"/>
 <param name="mdSmdPad" value="8mil"/>
 <param name="mdSmdVia" value="8mil"/>
 <param name="mdSmdSmd" value="8mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="10mil"/>
+<param name="mdCopperDimension" value="20mil"/>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="8mil"/>
@@ -581,7 +581,7 @@ design rules under a new name.</description>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
 <param name="slThermalIsolate" value="10mil"/>
-<param name="slThermalsForVias" value="0"/>
+<param name="slThermalsForVias" value="1"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkGrid" value="0"/>
@@ -705,79 +705,45 @@ design rules under a new name.</description>
 </signal>
 <signal name="5V">
 <contactref element="J10" pad="3"/>
-<contactref element="J6" pad="2"/>
-<contactref element="J6" pad="1"/>
-<wire x1="93.98" y1="50.8" x2="96.52" y2="50.8" width="0" layer="19" extent="1-1"/>
-<wire x1="38.1" y1="2.54" x2="93.98" y2="50.8" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="D13">
-<contactref element="J1" pad="6"/>
-</signal>
-<signal name="D8">
-<contactref element="J1" pad="1"/>
 </signal>
 <signal name="D9">
-<contactref element="J1" pad="2"/>
+<contactref element="J1" pad="7"/>
 </signal>
 <signal name="D10">
-<contactref element="J1" pad="3"/>
+<contactref element="J1" pad="6"/>
 </signal>
 <signal name="D11">
-<contactref element="J1" pad="4"/>
-</signal>
-<signal name="D12">
 <contactref element="J1" pad="5"/>
 </signal>
 <signal name="AREF">
-<contactref element="J1" pad="8"/>
-</signal>
-<signal name="RX0">
-<contactref element="J2" pad="1"/>
+<contactref element="J1" pad="1"/>
 </signal>
 <signal name="TX1">
-<contactref element="J2" pad="2"/>
-</signal>
-<signal name="D2">
-<contactref element="J2" pad="3"/>
-</signal>
-<signal name="D3">
-<contactref element="J2" pad="4"/>
-</signal>
-<signal name="D4">
-<contactref element="J2" pad="5"/>
-</signal>
-<signal name="D5">
-<contactref element="J2" pad="6"/>
-</signal>
-<signal name="D6">
-<contactref element="J2" pad="7"/>
-</signal>
-<signal name="D7">
-<contactref element="J2" pad="8"/>
-</signal>
-<signal name="D14">
-<contactref element="J3" pad="8"/>
-</signal>
-<signal name="D15">
-<contactref element="J3" pad="7"/>
-</signal>
-<signal name="D16">
-<contactref element="J3" pad="6"/>
-</signal>
-<signal name="D17">
 <contactref element="J3" pad="5"/>
 </signal>
-<signal name="D18">
-<contactref element="J3" pad="4"/>
+<signal name="D2">
+<contactref element="J2" pad="6"/>
 </signal>
-<signal name="D19">
+<signal name="D3">
+<contactref element="J2" pad="5"/>
+</signal>
+<signal name="D4">
+<contactref element="J2" pad="4"/>
+</signal>
+<signal name="D5">
+<contactref element="J2" pad="3"/>
+</signal>
+<signal name="D7">
+<contactref element="J2" pad="1"/>
+</signal>
+<signal name="TX3">
+<contactref element="J3" pad="1"/>
+</signal>
+<signal name="TX2">
 <contactref element="J3" pad="3"/>
 </signal>
-<signal name="SDA">
-<contactref element="J3" pad="2"/>
-</signal>
-<signal name="SCL">
-<contactref element="J3" pad="1"/>
+<signal name="RX1">
+<contactref element="J3" pad="6"/>
 </signal>
 <signal name="D25">
 <contactref element="J4" pad="15"/>
@@ -930,11 +896,11 @@ design rules under a new name.</description>
 <contactref element="J10" pad="6"/>
 </signal>
 <signal name="GND">
-<contactref element="J10" pad="5"/>
-<contactref element="J10" pad="4"/>
 <contactref element="J7" pad="1"/>
 <contactref element="J7" pad="2"/>
-<polygon width="0.2032" layer="16" isolate="0.3048">
+<contactref element="J10" pad="4"/>
+<contactref element="J10" pad="5"/>
+<polygon width="0.2032" layer="16" isolate="0.6096">
 <vertex x="0" y="0"/>
 <vertex x="99.06" y="0"/>
 <vertex x="99.06" y="1.27"/>
@@ -946,7 +912,7 @@ design rules under a new name.</description>
 <vertex x="0" y="53.34"/>
 <vertex x="0" y="2.54"/>
 </polygon>
-<polygon width="0.2032" layer="1" isolate="0.3048">
+<polygon width="0.2032" layer="1" isolate="0.6096">
 <vertex x="0" y="0"/>
 <vertex x="99.06" y="0"/>
 <vertex x="99.06" y="1.27"/>
@@ -958,11 +924,44 @@ design rules under a new name.</description>
 <vertex x="0" y="53.34"/>
 <vertex x="0" y="2.54"/>
 </polygon>
-<contactref element="J1" pad="7"/>
-<wire x1="93.98" y1="7.62" x2="96.52" y2="7.62" width="0" layer="19" extent="1-1"/>
-<wire x1="43.18" y1="2.54" x2="93.98" y2="7.62" width="0" layer="19" extent="1-1"/>
-<wire x1="40.64" y1="2.54" x2="43.18" y2="2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="39.116" y1="50.8" x2="40.64" y2="2.54" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="2"/>
+</signal>
+<signal name="D20">
+<contactref element="J3" pad="7"/>
+</signal>
+<signal name="TX0">
+<contactref element="J2" pad="7"/>
+</signal>
+<signal name="RX0">
+<contactref element="J2" pad="8"/>
+</signal>
+<signal name="D6">
+<contactref element="J2" pad="2"/>
+</signal>
+<signal name="D21">
+<contactref element="J3" pad="8"/>
+</signal>
+<signal name="RX3">
+<contactref element="J3" pad="2"/>
+</signal>
+<signal name="RX2">
+<contactref element="J3" pad="4"/>
+</signal>
+<signal name="D8">
+<contactref element="J1" pad="8"/>
+</signal>
+<signal name="D13">
+<contactref element="J1" pad="3"/>
+</signal>
+<signal name="D12">
+<contactref element="J1" pad="4"/>
+</signal>
+<signal name="5V@1">
+<contactref element="J6" pad="2"/>
+<contactref element="J6" pad="1"/>
+<wire x1="93.98" y1="50.8" x2="96.52" y2="50.8" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
 </signal>
 </signals>
 </board>
