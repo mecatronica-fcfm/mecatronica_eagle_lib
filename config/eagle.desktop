@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Eagle
+Comment=PCB
+Exec=/opt/eagle/bin/eagle
+Icon=/opt/eagle/bin/eagleicon50.png
+Type=Application
+Terminal=false
+Categories=GNOME;GTK;Utility;TerminalEmulator;System;
+
+Actions=NewWindow
+
+[Desktop Action NewWindow]
+Name=New Design
+Exec=/opt/eagle/bin/eagle
+OnlyShowIn=Unity;
