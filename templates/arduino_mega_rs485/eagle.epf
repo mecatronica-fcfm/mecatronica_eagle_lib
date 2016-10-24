@@ -368,7 +368,6 @@ UsedLibrary="/home/rodrigo/eagle/lbr/SparkFun-Retired.lbr"
 UsedLibrary="/home/rodrigo/eagle/lbr/SparkFun-Sensors.lbr"
 UsedLibrary="/home/rodrigo/eagle/lbr/User-Submitted.lbr"
 UsedLibrary="/home/rodrigo/eagle/lbr/adafruit.lbr"
-UsedLibrary="/home/rodrigo/eagle/lbr/mecatronica_eagle_lib.lbr"
 
 [Win_1]
 Type="Control Panel"
