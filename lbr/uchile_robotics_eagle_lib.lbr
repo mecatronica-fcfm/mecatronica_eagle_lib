@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2929,6 +2929,30 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <text x="-5" y="2.5" size="1.016" layer="27" font="vector" rot="R270">&gt;Value</text>
 <text x="4" y="2.5" size="1.016" layer="25" font="vector" rot="R270">&gt;Name</text>
 </package>
+<package name="LTS25_NP">
+<description>LEM LTS 25-NP</description>
+<pad name="OUT" x="0" y="-2.54" drill="0.8" shape="long"/>
+<pad name="V+" x="0" y="2.54" drill="0.8" shape="long"/>
+<pad name="V0" x="0" y="0" drill="0.8" shape="long"/>
+<pad name="IN1" x="7.62" y="6.35" drill="0.8" shape="long" rot="R270"/>
+<pad name="IN2" x="10.16" y="6.35" drill="0.8" shape="long" rot="R270"/>
+<pad name="IN3" x="12.7" y="6.35" drill="0.8" shape="long" rot="R270"/>
+<pad name="OUT6" x="7.62" y="-6.35" drill="0.8" shape="long" rot="R270"/>
+<pad name="OUT5" x="10.16" y="-6.35" drill="0.8" shape="long" rot="R270"/>
+<pad name="OUT4" x="12.7" y="-6.35" drill="0.8" shape="long" rot="R270"/>
+<wire x1="-1.84" y1="5.52" x2="20.36" y2="5.52" width="0.127" layer="21"/>
+<wire x1="20.36" y1="5.52" x2="20.36" y2="-5.52" width="0.127" layer="21"/>
+<wire x1="20.36" y1="-5.52" x2="-1.84" y2="-5.52" width="0.127" layer="21"/>
+<wire x1="-1.84" y1="-5.52" x2="-1.84" y2="5.52" width="0.127" layer="21"/>
+<text x="8.89" y="2.54" size="1.27" layer="21" font="vector">IN</text>
+<text x="8.89" y="-3.81" size="1.27" layer="21" font="vector">OUT</text>
+<text x="2.54" y="2.54" size="1.27" layer="21" font="vector">+</text>
+<text x="2.54" y="0" size="1.27" layer="21" font="vector">0</text>
+<text x="2.54" y="-2.54" size="1.27" layer="21" font="vector">out</text>
+<wire x1="13.97" y1="2.54" x2="13.97" y2="-1.27" width="0.8128" layer="21"/>
+<wire x1="13.97" y1="-1.27" x2="15.24" y2="0" width="0.8128" layer="21"/>
+<wire x1="13.97" y1="-1.27" x2="12.7" y2="0" width="0.8128" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="M08">
@@ -3174,6 +3198,49 @@ Digikey code: WM18888-ND</description>
 <pin name="IP-" x="15.24" y="-7.62" length="middle" direction="out" rot="R180"/>
 <text x="-10.16" y="15.24" size="1.778" layer="95" font="vector" align="top-left">&gt;Name</text>
 <text x="-10.16" y="-15.24" size="1.778" layer="96" font="vector">&gt;Value</text>
+</symbol>
+<symbol name="LTS25_NP">
+<description>LEM LTS 25-NP</description>
+<wire x1="-12.7" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="4.953" y2="0" width="0.1524" layer="94"/>
+<wire x1="4.953" y1="0" x2="0" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="0" y1="-3.81" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="-2.921" y1="1.27" x2="-0.381" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.27" x2="-0.381" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="0" x2="-0.381" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="-1.27" x2="-2.921" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-2.921" y1="-1.27" x2="-2.921" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-2.921" y1="1.27" x2="-0.381" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-2.921" y1="-1.27" x2="-0.381" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="1.27" width="0.1524" layer="94" curve="-182.291526"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="0" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-3.683" y1="4.572" x2="-3.683" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-3.683" y1="1.27" x2="-3.683" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-3.683" y1="-2.54" x2="-3.683" y2="-4.572" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="-1.27" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="-2.54" width="0.1524" layer="94" curve="-180"/>
+<text x="-2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="1.27" x2="-1.27" y2="4.064" layer="94"/>
+<rectangle x1="-1.905" y1="1.27" x2="-1.778" y2="4.064" layer="94"/>
+<rectangle x1="-1.651" y1="-4.064" x2="-1.27" y2="-1.27" layer="94"/>
+<rectangle x1="-1.905" y1="-4.064" x2="-1.778" y2="-1.27" layer="94"/>
+<pin name="IN1" x="-5.08" y="7.62" visible="pad" length="short" direction="in" rot="R270"/>
+<pin name="OUT6" x="-5.08" y="-7.62" visible="pad" length="short" direction="out" rot="R90"/>
+<pin name="V+" x="7.62" y="2.54" visible="pad" length="short" direction="in" rot="R180"/>
+<pin name="VOUT" x="7.62" y="-2.54" visible="pad" length="short" direction="out" rot="R180"/>
+<pin name="0V" x="7.62" y="0" visible="pad" length="short" direction="in" rot="R180"/>
+<pin name="IN2" x="-7.62" y="7.62" visible="pad" length="short" direction="in" rot="R270"/>
+<pin name="IN3" x="-10.16" y="7.62" visible="pad" length="short" direction="in" rot="R270"/>
+<pin name="OUT5" x="-7.62" y="-7.62" visible="pad" length="short" direction="out" rot="R90"/>
+<pin name="OUT4" x="-10.16" y="-7.62" visible="pad" length="short" direction="out" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4520,6 +4587,35 @@ Datasheet: http://www.ti.com/lit/ds/symlink/sn75176b.pdf</description>
 <connect gate="G$1" pin="OCD" pad="6"/>
 <connect gate="G$1" pin="SCLK" pad="4"/>
 <connect gate="G$1" pin="VDD" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LEM_LTS25_NP">
+<description>&lt;h3&gt;LEM LTS 25-NP&lt;/h3&gt;
+
+&lt;p&gt;
+&lt;b&gt;Digikey:&lt;/b&gt; 398-1002-ND&lt;br/&gt;
+&lt;b&gt;Datasheet:&lt;/b&gt; http://www.lem.com/docs/products/lts%2025-np.pdf
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LTS25_NP" x="7.62" y="0"/>
+</gates>
+<devices>
+<device name="" package="LTS25_NP">
+<connects>
+<connect gate="G$1" pin="0V" pad="V0"/>
+<connect gate="G$1" pin="IN1" pad="IN1"/>
+<connect gate="G$1" pin="IN2" pad="IN2"/>
+<connect gate="G$1" pin="IN3" pad="IN3"/>
+<connect gate="G$1" pin="OUT4" pad="OUT4"/>
+<connect gate="G$1" pin="OUT5" pad="OUT5"/>
+<connect gate="G$1" pin="OUT6" pad="OUT6"/>
+<connect gate="G$1" pin="V+" pad="V+"/>
+<connect gate="G$1" pin="VOUT" pad="OUT"/>
 </connects>
 <technologies>
 <technology name=""/>
